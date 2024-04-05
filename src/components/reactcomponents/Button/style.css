@@ -1,0 +1,146 @@
+:root {
+    --default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei", "Source Han Sans CN", sans-serif;
+}
+
+.main-container {
+    overflow: hidden;
+}
+
+.main-container,
+.main-container * {
+    box-sizing: border-box;
+}
+
+input,
+select,
+textarea,
+button {
+    outline: 0;
+}
+
+.main-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 12px;
+    position: relative;
+    width: 226px;
+}
+
+.text {
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: -2px;
+}
+.center {
+    display: flex;
+    align-items: center;
+}
+.icon-true {
+    padding: 10px 40px 10px 43px;
+}
+
+.primary-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 226px;
+    margin: 0 auto;
+    padding: 10px 40px 10px 40px;
+    background: #1ccc1d;
+    border-radius: 30px;
+    border: none;
+    color: #ffffff;
+    font-family: Mark Pro, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.primary-button:hover:not([disabled]) {
+    background: #0b520c;
+    cursor: pointer;
+}
+
+.primary-button:focus {
+    background: #16A317;
+}
+
+.primary-button-disabled {
+    color: #999999 !important;
+    background: #e5e5e5 !important;
+}
+
+.primary-button-disabled .icon-active path {
+    fill: #999999 !important;
+}
+
+.primary-button-ghost {
+    color: #1ccc1d;
+    background: none;
+    border: 1px solid #1ccc1d;
+}
+
+.primary-button-ghost .icon-active path {
+    fill: #1ccc1d;
+}
+
+.icon {
+    display: none;
+}
+
+.icon-active {
+    display: flex;
+}
+
+.icon-active path {
+    fill: white;
+}
+
+.rotate-icon {
+    transform: rotate(180deg);
+}
+
+.no-rotate-icon {
+    transform: rotate(0deg);
+}
+
+.secondary-button {
+    background: #282B38;
+    padding: 10px 30px 10px 30px;
+}
+
+.secondary-button:hover:not([disabled]) {
+    background: #0C0C15;
+}
+
+.secondary-button:focus {
+    background: #323053;
+}
+
+.secondary-button-ghost {
+    color: #282B38;
+    background: none;
+    border: 1px solid #282B38;
+}
+
+.secondary-button-ghost .icon-active path {
+    fill: #282B38;
+}
+
+
+.terciary-button {
+    background: #B1D906;
+}
+
+.terciary-button:hover:not([disabled]) {
+    background: #4F6003;
+}
+
+.terciary-button:focus {
+    background: #9EC106;
+}

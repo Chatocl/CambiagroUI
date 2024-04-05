@@ -1,0 +1,77 @@
+:root {
+  --default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+      "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+      "Source Han Sans CN", sans-serif;
+}
+
+.main-container {
+  display: flex;
+  align-items: center; /* Alinea verticalmente el contenido */
+}
+
+.label-goes-here {
+  color: #000000;
+  font-family: Mark Pro, var(--default-font-family);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-left: 10px; /* Espacio entre el checkbox y el texto */
+}
+
+/* Oculta el checkbox original */
+input[type="checkbox"] {
+  display: none;
+}
+
+/* Crea un nuevo checkbox */
+input[type="checkbox"]+label {
+  position: relative;
+  cursor: pointer;
+}
+
+input[type="checkbox"]+label:before {
+  content: "";
+  display: inline-block; /* Para que esté en la misma línea que el texto */
+  width: 24px;
+  height: 24px;
+  background: #ffffff;
+  border: 1px solid #1ccc1d;
+  border-radius: 4px;
+  vertical-align: middle; /* Alinea verticalmente con el texto */
+}
+
+/*Hover sin checkear*/
+input[type="checkbox"]:hover+label:before {
+  border-color: #0B520C;
+}
+
+/* Color cuando el checkbox está seleccionado */
+input[type="checkbox"]:checked+label:before {
+  background: #1ccc1d;
+  background-image: url("../Checkbox/img/white_check.svg");
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Estilo para la clase disabled-checkbox */
+input[type="checkbox"].disabled-checkbox + label:before {
+  border-color: #E5E5E5;
+  background: #FFFFFF;
+  cursor: not-allowed;
+}
+
+.disabled-checkbox + label {
+  cursor: not-allowed;
+}
+
+input[type="checkbox"].disabled-checkbox:checked + label:before {
+  background: #E5E5E5;
+  border-color: #E5E5E5;
+  cursor: not-allowed;
+  background-image: url("../Checkbox/img/gray_check.svg");
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+}

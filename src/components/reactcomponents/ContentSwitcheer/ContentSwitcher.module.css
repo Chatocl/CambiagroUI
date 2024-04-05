@@ -1,0 +1,237 @@
+
+
+/* COMPONENT LEFT */
+
+.containerDefaultLeft {
+    display: flex;
+    width: 142px;
+    height: 40px; /* SMALL 40px, MEDIUM 48px, LARGE 56px */
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 24px 0px 0px 24px;
+    border: 1px solid var(--UI-Text-Secondary, #282B38);
+    background: var(--UI-Text-White, #FFF);
+  }
+  
+  .containerActiveLeft {
+    display: flex;
+    width: 142px;
+    height: 40px;   /* SMALL 40px, MEDIUM 48px, LARGE 56px */
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 24px 0px 0px 24px;
+    border: 1px solid var(--UI-Text-Secondary, #323053);
+    background: var(--UI-Text-White, #FFF);
+  }
+  
+  .containerSelectedLeft {
+    display: flex;
+    width: 142px;
+    height: 40px;   /* SMALL 40px, MEDIUM 48px, LARGE 56px */
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 24px 0px 0px 24px;
+    border: 1px solid var(--UI-Text-Secondary, #323053);
+    background: var(--UI-Text-White, #282B38);
+  }
+  
+  .containerHoverLeft {
+    display: flex;
+    width: 142px;
+    height: 40px;   /* SMALL 40px, MEDIUM 48px, LARGE 56px */
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 24px 0px 0px 24px;
+    border: 1px solid var(--UI-Text-Secondary, #0C0C15);
+    background: var(--UI-Text-White, #0C0C15);
+  }
+  
+  .containerDisabledLeft{
+    display: flex;
+    width: 142px;
+    height: 40px;   /* SMALL 40px, MEDIUM 48px, LARGE 56px */
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 24px 0px 0px 24px;
+    border: 1px solid var(--UI-Text-Secondary, #999999);
+    background: var(--UI-Text-White, #E5E5E5);
+  }
+
+/* COMPONENT MIDDLE*/
+
+.containerDefaultMiddle {
+    display: flex;
+    width: 142px;
+    height: 40px;   /* SMALL 40px, MEDIUM 48px, LARGE 56px */
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 0px 0px 0px 0px;
+    border: 1px solid var(--UI-Text-Secondary, #282B38);
+    background: var(--UI-Text-White, #FFF);
+  }
+  
+  .containerActiveMiddle {
+    display: flex;
+    width: 142px;
+    height: 40px;   /* SMALL 40px, MEDIUM 48px, LARGE 56px */
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 0px 0px 0px 0px;
+    border: 1px solid var(--UI-Text-Secondary, #323053);
+    background: var(--UI-Text-White, #FFF);
+  }
+  
+  .containerSelectedMiddle {
+    display: flex;
+    width: 142px;
+    height: 40px;   /* SMALL 40px, MEDIUM 48px, LARGE 56px */
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 0px 0px 0px 0px;
+    border: 1px solid var(--UI-Text-Secondary, #323053);
+    background: var(--UI-Text-White, #282B38);
+  }
+  
+  .containerHoverMiddle {
+    display: flex;
+    width: 142px;
+    height: 40px;   /* SMALL 40px, MEDIUM 48px, LARGE 56px */
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 0px 0px 0px 0px;
+    border: 1px solid var(--UI-Text-Secondary, #0C0C15);
+    background: var(--UI-Text-White, #0C0C15);
+  }
+  
+  .containerDisabledMiddle{
+    display: flex;
+    width: 142px;
+    height: 40px;   /* SMALL 40px, MEDIUM 48px, LARGE 56px */
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 0px 0px 0px 0px;
+    border: 1px solid var(--UI-Text-Secondary, #999999);
+    background: var(--UI-Text-White, #E5E5E5);
+  }
+
+/* COMPONENT RIGHT*/
+
+.containerDefaultRight {
+    display: flex;
+    width: 142px;
+    height: 40px;   /* SMALL 40px, MEDIUM 48px, LARGE 56px */
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 0px 24px 24px 0px;
+    border: 1px solid var(--UI-Text-Secondary, #282B38);
+    background: var(--UI-Text-White, #FFF);
+  }
+  
+  .containerActiveRight {
+    display: flex;
+    width: 142px;
+    height: 40px;   /* SMALL 40px, MEDIUM 48px, LARGE 56px */
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 0px 24px 24px 0px;
+    border: 1px solid var(--UI-Text-Secondary, #323053);
+    background: var(--UI-Text-White, #FFF);
+  }
+  
+  .containerSelectedRight {
+    display: flex;
+    width: 142px;
+    height: 40px;   /* SMALL 40px, MEDIUM 48px, LARGE 56px */
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 0px 24px 24px 0px;
+    border: 1px solid var(--UI-Text-Secondary, #323053);
+    background: var(--UI-Text-White, #282B38);
+  }
+  
+  .containerHoverRight {
+    display: flex;
+    width: 142px;
+    height: 40px;   /* SMALL 40px, MEDIUM 48px, LARGE 56px */
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 0px 24px 24px 0px;
+    border: 1px solid var(--UI-Text-Secondary, #0C0C15);
+    background: var(--UI-Text-White, #0C0C15);
+  }
+  
+  .containerDisabledRight {
+    display: flex;
+    width: 142px;
+    height: 40px;   /* SMALL 40px, MEDIUM 48px, LARGE 56px */
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 0px 24px 24px 0px;
+    border: 1px solid var(--UI-Text-Secondary, #999999);
+    background: var(--UI-Text-White, #E5E5E5);
+  }
+  
+
+  /* STYLES TEXT */
+
+  .textBlack {
+    text-align: center;
+    color: black;
+    font-size: 14px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 100;
+    line-height: 24px;
+    word-wrap: break-word;
+  }
+  
+  .textWhite {
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 100;
+    line-height: 24px;
+    word-wrap: break-word;
+  }
+  
+  .textDisabled {
+    text-align: center;
+    color: #999999;
+    font-size: 14px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 100;
+    line-height: 24px;
+    word-wrap: break-word;
+  }
+  
+  

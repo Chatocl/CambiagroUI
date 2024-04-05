@@ -1,0 +1,72 @@
+.AccordionHeader {
+  cursor: pointer;
+  height: 40px;
+  border-bottom: solid 1px #1CCC1D;
+}
+
+.AccordionHeader:hover {
+  border-bottom: solid 1px #0B520C;
+}
+
+.AccordionHeader:hover .AccordionIcon{
+  color: #0B520C;
+}
+
+.AccordionHeader h5 {
+  padding-left: 16px;
+  padding-top: 10px;
+  font-family: Mark Pro, var(--default-font-family);
+  font-size: 19px;
+  font-weight: 400;
+  color: black;
+}
+
+.AccordionBody p {
+  padding: 0 16px;
+  padding-top: 10px;
+  margin: 0;
+  font-family: Mark Pro, var(--default-font-family);
+  font-size: 19px;
+  font-weight: 400;
+}
+
+.AccordionIcon {
+  margin-left: auto;
+  color: rgb(28, 204, 29);
+  width: 25px;
+  height: 25px;
+  margin-right: 16px;
+}
+
+/*Disabled*/
+.DisabledAccordionHeader{
+  cursor: not-allowed;
+  height: 40px;
+  border-bottom: solid 1px #999999;
+}
+
+.DisabledAccordionHeader h5 {
+  padding-left: 16px;
+  padding-top: 10px;
+  font-family: Mark Pro, var(--default-font-family);
+  font-size: 19px;
+  font-weight: 400;
+  color: #999999;
+}
+
+.DisabledAccordionHeader p {
+  padding: 0 16px;
+  padding-top: 10px;
+  margin: 0;
+  font-family: Mark Pro, var(--default-font-family);
+  font-size: 19px;
+  font-weight: 400;
+}
+
+.DisabledAccordionIcon{
+  margin-left: auto;
+  color: #999999;
+  width: 25px;
+  height: 25px;
+  margin-right: 16px;
+}

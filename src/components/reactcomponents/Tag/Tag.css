@@ -1,0 +1,86 @@
+.tag-container {
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tag-icon-regular, .tag-icon-box{
+    padding-right: 6px;
+}
+
+.tag-container p {
+    color: black;
+    font-family: Mark Pro, var(--default-font-family);
+    font-size: 13.333px;
+    font-weight: 400;
+}
+
+.tag-container.regular-green {
+    background-color: #C8E451;
+}
+
+.tag-container.regular-green .tag-icon-regular{
+    color: #4F6003;
+}
+
+.tag-container.regular-green .tag-icon-box{
+    color: black;
+}
+
+.tag-container.regular-red {
+    background-color: #F4BFBF;
+}
+
+.tag-container.regular-red .tag-icon-regular{
+    color: #DB2929;
+}
+
+.tag-container.regular-red .tag-icon-box{
+    color: black;
+}
+
+.tag-container.regular-light-green {
+    background-color: #E8F4B4;
+}
+
+.tag-container.regular-light-green .tag-icon-regular{
+    color: #9EC106;
+}
+
+.tag-container.regular-light-green .tag-icon-box{
+    color: black;
+}
+
+.tag-container.regular-grey {
+    background-color: #E5E5E5;
+}
+
+.tag-container.regular-grey .tag-icon-regular{
+    color: #3E3C68;
+}
+
+.tag-container.disabled {
+    background-color: #E5E5E5;
+}
+
+.tag-container.disabled .tag-icon-box{
+    color: #999999;
+}
+
+.tag-container.disabled p{
+    color: #999999;
+}
+
+.tag-container.info {
+    background-color: #787795;
+}
+
+.tag-container.info .tag-icon-box, p{
+    color: white;
+}
+
+.tag-container.info p{
+    color: white;
+}

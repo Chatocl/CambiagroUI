@@ -1,0 +1,107 @@
+:root {
+    --default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+        "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+        "Source Han Sans CN", sans-serif;
+}
+
+.main-container {
+    overflow: hidden;
+}
+
+.main-container,
+.main-container * {
+    box-sizing: border-box;
+}
+
+input,
+select,
+textarea,
+button {
+    outline: 0;
+}
+
+.main-container-text {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto 1fr;
+    align-items: center;
+    justify-content: center;
+    width: 278px;
+}
+
+.label-text {
+    font-family: var(--default-font-family);
+    font-size: 14px;
+    line-height: 1.5;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.char-counter-text {
+    font-family: var(--default-font-family);
+    font-size: 14px;
+    text-align: right;
+    line-height: 1.5;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.textarea {
+    grid-column: span 2;
+    resize: none;
+    padding: 10px;
+    height: 78px;
+    width: 270px;
+    font-family: var(--default-font-family);
+    font-size: 14px;
+    line-height: 1.5;
+    color: #000000;
+    border: 1px solid #000000;
+    border-radius: 8px;
+}
+
+.textarea:focus {
+    /* Estilos cuando el textarea está enfocado */
+    border-color: #16A317;
+    /* Cambia el color del borde */
+}
+
+.error {
+    grid-column: span 2;
+    font-family: var(--default-font-family);
+    font-size: 12px;
+    line-height: 1.5;
+    color: #DB2929;
+    margin-bottom: 10px;
+}
+
+.error-textarea {
+    border: 1px solid #DB2929;
+    border-radius: 8px;
+}
+
+.error-textarea:focus {
+    border: 1px solid #DB2929;
+    border-radius: 8px;
+}
+
+.disabled-textarea {
+    background-color: #E5E5E5;
+    color: #E5E5E5;
+    border: none;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.disabled-textarea::placeholder,
+.disabled-text {
+    color: #999999;
+}
+
+.textarea.error-textarea {
+    background-image: url('./warning.svg');
+    background-repeat: no-repeat;
+    background-position: calc(100% - 15px) calc(100% - 72px);
+    padding-right: 30px;
+}

@@ -1,0 +1,31 @@
+/* components/Icon.module.css */
+.icon {
+    width: 5em; /* Tamaño base del icono */
+    height: 5em; /* w = 16 px h = 16px*/
+  }
+  
+  .xl {
+    width: 5em; /*w = 80px*/
+    height: 5em; /*h = 80px*/
+  }
+  
+  .l {
+    width: 3em; /*w = 48px*/
+    height: 3em; /*h = 48px*/
+  }
+  
+  .m {
+    width: 2.5em; /*w = 40px*/
+    height: 2.5em; /*h = 40px*/
+  }
+  
+  .s {
+    width: 2em; /*w = 32px*/
+    height: 2em; /*h = 32px*/
+  }
+  
+  .xs {
+    width: 1.5em; /*w = 24px*/
+    height: 1.5em; /*h = 24px*/
+  }
+  

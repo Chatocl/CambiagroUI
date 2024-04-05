@@ -1,0 +1,156 @@
+
+/*CONTAINERS*/
+
+.containerDefault {
+  display: inline-flex;
+  height: 26px; /*S 26px, M 32px, L 40px */
+  width: auto;
+  padding: 10px 14px 10px 18px; 
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: var(--UI-Terciary-Default, #B1D906);
+}
+
+.containerActive {
+  display: inline-flex;
+  height: 26px; /*S 26px, M 32px, L 40px */
+  width: auto;
+  padding: 10px 14px 10px 18px; 
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: var(--UI-Terciary-Active, #9EC106);
+}
+.containerDisabled {
+  display: inline-flex;
+  height: 26px; /*S 26px, M 32px, L 40px */
+  width: auto;
+  padding: 10px 14px 10px 18px; 
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: var(--UI-Background-Disabled, #E5E5E5);
+}
+.containerHover {
+  display: inline-flex;
+  height: 26px; /*S 26px, M 32px, L 40px */
+  width: auto;
+  padding: 10px 14px 10px 18px; 
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: var(--UI-Terciary-Hover, #4F6003);  
+}
+.containerGhost {
+  display: inline-flex;
+  height: 26px; /*S 26px, M 32px, L 40px */
+  width: auto;
+  padding: 10px 14px 10px 18px; 
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  border: 1px solid var(--UI-Terciary-Default, #B1D906); 
+  background-color: #FFF;
+}
+
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  width: 100%;
+}
+
+
+/*TEXTS*/
+
+.textBlack {
+  color: var(--UI-Text-Secondary, #282B38);
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; 
+
+}
+
+.textWhite {
+  color: var(--UI-Text-White, #FFF);
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; 
+ 
+}
+
+.textDisabled {
+  color: var(--UI-Text-Disabled, #999);
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; 
+
+}
+.textGhost {
+  color: var(--UI-Terciary-Default, #B1D906);
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; 
+ 
+}
+
+/*ICONS*/
+
+.iconWrapper {
+  width: 24px;
+  height: 24px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-left: 10px;
+}
+
+.iconBlack {
+  width: 24px;
+  height: 24px;
+  position: relative;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><g id="close"><path id="Fill" fill-rule="evenodd" clip-rule="evenodd" d="M18 7.05L16.95 6L12 10.95L7.05 6L6 7.05L10.95 12L6 16.95L7.05 18L12 13.05L16.95 18L18 16.95L13.05 12L18 7.05Z" fill="%23282B38"/></g></svg>');
+}
+
+.iconWhite {
+  width: 24px;
+  height: 24px;
+  position: relative;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><g id="close"><path id="Fill" fill-rule="evenodd" clip-rule="evenodd" d="M18 7.05L16.95 6L12 10.95L7.05 6L6 7.05L10.95 12L6 16.95L7.05 18L12 13.05L16.95 18L18 16.95L13.05 12L18 7.05Z" fill="white"/></g></svg>');
+}
+
+.iconDisabled {
+  width: 24px;
+  height: 24px;
+  position: relative;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M18 7.05L16.95 6L12 10.95L7.05 6L6 7.05L10.95 12L6 16.95L7.05 18L12 13.05L16.95 18L18 16.95L13.05 12L18 7.05Z" fill="%23999999"/></svg>');
+}
+
+.iconGhost {
+  width: 24px;
+  height: 24px;
+  position: relative;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M18 7.05L16.95 6L12 10.95L7.05 6L6 7.05L10.95 12L6 16.95L7.05 18L12 13.05L16.95 18L18 16.95L13.05 12L18 7.05Z" fill="%23B1D906"/></svg>');
+}
+
+

@@ -1,0 +1,183 @@
+:root {
+    --default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+        "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+        "Source Han Sans CN", sans-serif;
+}
+
+.main-container-tooltip {
+    position: relative !important;
+}
+
+.main-container-tooltip,
+.main-container-tooltip * {
+    box-sizing: border-box;
+}
+
+input,
+select,
+textarea,
+button {
+    outline: 0;
+}
+
+.main-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.main-text:hover + .tooltip-container {
+    display: block;
+}
+
+.tooltip-container {
+    position: absolute;
+    top: 22px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+    width: 250.14px;
+    height: auto;
+    margin: 0 auto;
+    z-index: 4;
+}
+
+.tooltip-container:hover {
+    display: block;
+}
+
+.triangle {
+    position: relative;
+    width: 9px;
+    height: 5px;
+    margin: 0 0 0 17px;
+    background: url(images/c9d41d09-302e-4840-887c-003819e76886.png) no-repeat center;
+    background-size: 100% 100%;
+}
+
+.left-triangle {
+    margin: 0 0 0 17px;
+}
+.right-triangle {
+    margin: 0 17px 0 auto;
+}
+.center-triangle {
+    margin: 0 auto;
+}
+
+.frame {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 20px;
+    width: auto;
+    height: auto;
+    margin: 0 0 0 -0.01px;
+    padding: 16px;
+    background: #282b38;
+    z-index: 1;
+    border-radius: 8px;
+}
+
+.container-text {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    position: relative;
+    width: auto;
+    height: auto;
+    color: #ffffff;
+    font-family: Mark Pro, var(--default-font-family);
+    font-size: 13.329999923706055px;
+    font-weight: 400;
+    line-height: 18.662px;
+    text-align: left;
+    transform: rotate(0.1deg);
+    z-index: 2;
+}
+
+.frame-1 {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 20px;
+    position: relative;
+    width: 193px;
+    z-index: 3;
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 5px;
+    position: relative;
+    width: 33px;
+    z-index: 4;
+}
+
+.link-2 {
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    height: 24px;
+    color: #1ccc1d;
+    font-family: Mark Pro, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+    text-decoration: underline;
+    white-space: nowrap;
+    z-index: 5;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 10px;
+    position: relative;
+    width: 140px;
+    height: 40px;
+    padding: 10px 43px 10px 43px;
+    cursor: pointer;
+    background: #1ccc1d;
+    border: none;
+    z-index: 6;
+    border-radius: 24px;
+}
+
+.tooltip-button {
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    height: 24px;
+    color: #ffffff;
+    font-family: Mark Pro, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 7;
+}
+
+/* Variables */
+.show {
+    display: flex;
+}
+
+.no-show {
+    display: none;
+}

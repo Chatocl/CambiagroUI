@@ -1,0 +1,47 @@
+.pagination {
+    display: flex;
+    justify-content: center;
+}
+
+.pagination ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.pagination ul li {
+    margin: 0 5px;
+}
+
+.pagination ul li button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.pagination ul li button:focus {
+    outline: none;
+}
+
+.flecha {
+    color: #1CCC1D;
+}
+
+.pagination ul li button:disabled {
+    opacity: 100%;
+    color: #999999;
+    cursor: not-allowed;
+}
+
+.pagination ul li.active button {
+    background-color: #E5E5E5;
+    color: #1CCC1D;
+    border: #1CCC1D solid 1px;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.pagination ul li button:hover {
+    border-bottom: 2px solid #0B520C; 
+}

@@ -1,0 +1,99 @@
+.double-slider1-container{
+    width: 288px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.slider1-range-slider{
+    position: relative;
+    width: 100%;
+    height: 4px;
+    background-color: #E5E5E5;
+    border-radius: 8px;
+    margin-top: 6px;
+}
+
+.slider1-track{
+    height: 100%;
+    position: absolute;
+    background-color: #1CCC1D;
+    border-radius: 8px;
+}
+
+.double-slider1-container.disabled .slider1-track{
+    background-color: #E5E5E5;
+}
+
+.slider1-range-slider input {
+    position: absolute;
+    width: 100%;
+    background: none;
+    pointer-events: none;
+    left: 0;
+    transform: translateY(-50%);
+    appearance: none;
+    margin: 0;
+    top: 50%;
+}
+
+.double-slider1-container.disabled .slider1-range-slider input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #E5E5E5;
+    cursor: not-allowed;
+    pointer-events: auto;
+}
+
+.slider1-range-slider input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #1CCC1D;
+    cursor: pointer;
+    pointer-events: auto;
+}
+
+.slider1-range-slider input[type="range"]:focus::-webkit-slider-thumb {
+    outline: 6px solid rgba(28, 204, 29, 0.3);
+}
+
+.slider1-range-slider input[type="range"]::-moz-range-thumb {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #1CCC1D;
+    -moz-appearance: none;
+    cursor: pointer;
+}
+
+.tooltip{
+    color: black;
+    font-family: Mark Pro, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 400;
+    position: absolute;
+}
+
+.double-slider1-container.disabled .tooltip{
+    color: #E5E5E5;
+}
+
+.min-tooltip{
+    transform: translateX(-50%) translateY(-100%);
+    z-index: 5;
+}
+
+.max-tooltip{
+    transform: translateX(50%) translateY(-100%);
+}
+
+.slider1-show-values{
+    position: relative;
+    width: 100%;
+}
